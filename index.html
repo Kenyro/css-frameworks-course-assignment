@@ -8,13 +8,87 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <title>CSS Frameworks CA - Kevin Rundberg</title>
+    <title>Creative Thinkers - CSS Frameworks CA</title>
+    <meta
+      name="description"
+      content="A Social media page for Creative Thinkers"
+    />
   </head>
   <body>
+    <nav class="navbar shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="/images/CT-logo.png" alt="logo" width="150" />
+        </a>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-primary" type="submit">
+            <img
+              class="search-icon"
+              src="/node_modules/bootstrap-icons/icons/search.svg"
+            />
+          </button>
+        </form>
+
+        <div class="col-3 col-md-2">
+          <a href="#" class="d-flex">
+            <img
+              class="border border-info rounded-circle p-1"
+              src="/node_modules/bootstrap-icons/icons/person.svg"
+              alt="Profile-Icon"
+              width="40"
+            />
+            <div class="m-2">John Smith</div>
+          </a>
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <div class="row">
-        <div class="col">
-          <h1>hello</h1>
+        <div class="col-md-2">
+          <button type="button" class="btn">
+            <img
+              src="/node_modules/bootstrap-icons/icons/person.svg"
+              alt="Profile"
+            />
+            Profile
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <button type="button" class="btn">
+            <img
+              src="/node_modules/bootstrap-icons/icons/person-add.svg"
+              alt="Friends"
+            />
+            Friends
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <button type="button" class="btn">
+            <img
+              src="/node_modules/bootstrap-icons/icons/menu-up.svg"
+              alt="More"
+            />
+            More
+          </button>
+        </div>
+        <div class="border">
+          <div class="col-3">
+            <span>Thoughts & Ideas</span>
+          </div>
+          <div class="col-3">
+            <span>Discover</span>
+          </div>
+          <div class="col-3"><span>News & Articles</span></div>
         </div>
       </div>
     </div>
