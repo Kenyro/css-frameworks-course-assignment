@@ -16,7 +16,7 @@
   </head>
   <body>
     <nav class="navbar shadow">
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img class="logo" src="/images/CT-logo.png" alt="logo" width="150" />
         </a>
@@ -43,12 +43,18 @@
               alt="Profile-Icon"
               width="40"
             />
-            <div class="m-2">John Smith</div>
+            <div class="col-sm-8 col-md-8 m-2">John Smith</div>
           </a>
         </div>
       </div>
     </nav>
-    <div class="container">
+    <div class="container bd-layout">
+      <aside class="bd-sidebar">
+        <button class="btn">Test</button>
+        <button class="btn">Test</button>
+        <button class="btn">Test</button>
+        <button class="btn">Test</button>
+      </aside>
       <div class="row mt-5">
         <div class="col-12">
           <button type="button" class="btn">
@@ -95,8 +101,8 @@
           </button>
         </div>
       </div>
-      <div class="row col-8 border border-4 rounded shadow m-2">
-        <div class="col-12 fw-bold m-0">Suggested Content</div>
+      <div class="row col-12 col-sm-12 border border-4 rounded shadow m-2">
+        <div class="col-12 fw-bold m-3">Suggested Content</div>
         <div class="col-12 m-2">
           <img
             src="/node_modules/bootstrap-icons/icons/person.svg"
@@ -130,7 +136,7 @@
           </div>
         </div>
       </div>
-      <div class="row border border-4 rounded shadow m-2">
+      <div class="row col-12 col-sm-12 border border-4 rounded shadow m-2">
         <div class="col fw-bold p-4">What's on your mind today?</div>
         <div class="input-group input-group-lg p-4">
           <div class="input-group-prepend"></div>
@@ -141,9 +147,57 @@
             aria-describedby="inputGroup-sizing-sm"
           />
         </div>
-        <div class="col">
-          <button type="button" class="btn btn-primary col-1 m-3">
-            Publish
+        <div class="col-12">
+          <img
+            src="/node_modules/bootstrap-icons/icons/image.svg"
+            class="border border-2 border-dark p-2 btn"
+          />
+
+          <img
+            src="/node_modules/bootstrap-icons/icons/emoji-smile.svg"
+            class="border border-2 border-dark p-2 btn m-2"
+          />
+          <div class="text-right">
+            <button type="button" class="btn btn-primary col-4 m-3">
+              Publish
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row border border-4 rounded shadow">
+        <div class="col m-2">
+          <img
+            src="/node_modules/bootstrap-icons/icons/person.svg"
+            class="border border-3 rounded-circle border-primary p-2"
+            alt="Profile-Icon"
+            width="50"
+          />
+          <h6 class="fw-bold">Jane Doe wonders...</h6>
+          <hr />
+          <div class="col">
+            <h3>Was life better or worse before the digital revolution?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium consequuntur voluptatum, praesentium, quod possimus
+              quisquam hic reprehenderit expedita nobis culpa nostrum, eligendi
+              suscipit ratione ea doloribus eveniet et quam quo.
+            </p>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="button" class="btn col-3">
+            <img src="/node_modules/bootstrap-icons/icons/hand-thumbs-up.svg" />
+            Agree
+          </button>
+          <button type="button" class="btn col-3">
+            <img
+              src="/node_modules/bootstrap-icons/icons/hand-thumbs-down.svg"
+            />
+            Disagree
+          </button>
+          <div class="col-3"></div>
+          <button type="button" class="btn col-3 border-dark">
+            Add a Comment
           </button>
         </div>
       </div>
