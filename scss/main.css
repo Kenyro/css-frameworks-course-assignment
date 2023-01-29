@@ -1,1 +1,4 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";/*# sourceMappingURL=main.css.map */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+p {
+  color: #e85a4f;
+}/*# sourceMappingURL=main.css.map */
